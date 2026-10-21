@@ -13,7 +13,7 @@ df["측정시각"] = pd.to_datetime(df["측정시각"])
 df["목표시각"] = pd.to_datetime(df["목표시각"])
 
 # ★ 데이터 읽기: 1일차 역별 이용 자료
-passengers = pd.read_csv("/content/drive/MyDrive/데이터분석(1019)/data/station_daily_usage.csv")
+passengers = pd.read_csv("station_daily_usage.csv")
 passengers["일자"] = pd.to_datetime(passengers["일자"])
 passengers["이용건수"] = passengers["승차건수"] + passengers["하차건수"]
 

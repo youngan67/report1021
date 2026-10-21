@@ -8,7 +8,7 @@ st.title("철도 데이터 분석 대시보드")
 st.caption("교육용 가상 자료입니다. AI 확인후보는 고장 확정이 아닙니다.")
 
 # 데이터 읽기: 2일차 설비 결과
-df = pd.read_csv("/content/drive/MyDrive/데이터분석(1019)/analysis_result.csv")
+df = pd.read_csv("analysis_result.csv")
 df["측정시각"] = pd.to_datetime(df["측정시각"])
 df["목표시각"] = pd.to_datetime(df["목표시각"])
 
